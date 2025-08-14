@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>theWiki | authenticate</title>
+    <link id="favicon" rel="icon" href="/assets/img/logo/theWiki.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script>
+        function checkPassword() {
+            const inputPassword = document.getElementById('password').value;
+            const correctPassword = 'wavesmiley1';
+            if (inputPassword === correctPassword) {
+                window.location.href = 'welcome.html';
+            } else {
+                alert('Try again. The password should be somewhere on your WVSI ID, or engraved into your arm during the training process.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>authenticate</h2>
+    <input type="password" id="password" />
+    <button onclick="checkPassword()">GO</button>
+</body>
+</html>
